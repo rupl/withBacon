@@ -1,3 +1,4 @@
-## InBedify: Source code for adding "in bed" to the markup of pages
+## WithBaconfy: Source code for adding "with bacon" to the markup of pages
 
-Created by Ezra Barnett Gildesgame and Benjamin Jeavons
+Originally Created by Ezra Barnett Gildesgame and Benjamin Jeavons
+Bacon Conversion by Chris Ruppel

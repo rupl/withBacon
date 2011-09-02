@@ -78,12 +78,12 @@ function inBedify($url) {
       // Only rewrite same-domain URLs.
       $host = parse_url($a->attr('href'), PHP_URL_HOST);
       if ($host == $url_parts['host']) { //@todo
-        $a->attr('href', 'http://inbedify.com/' . $a->attr('href'));
+        $a->attr('href', 'http://withbaconfy.com/' . $a->attr('href'));
       }
     }
     else {
       // Relative URL.
-      $a->attr('href', 'http://inbedify.com/' . $base . '/' . ltrim($a->attr('href'), '/'));
+      $a->attr('href', 'http://withbaconfy.com/' . $base . '/' . ltrim($a->attr('href'), '/'));
     }
   }
 
@@ -111,23 +111,23 @@ function inBedElement($qp_element) {
   // Handle punctuation.
   $text = $qp_element->text();
   if (preg_match('/(.*)([\?\.\!\*\)"])+/', $qp_element->text(), $matches)) {
-    $qp_element->text($matches[1] . ' in Bed' . $matches[2]);
+    $qp_element->text($matches[1] . ' with Bacon' . $matches[2]);
   }
   else {
-    $qp_element->append(' in Bed');
+    $qp_element->append(' with Bacon');
   }
 }
 
 function frontPage() {
   print <<<eof
 <!doctype html> 
-<html lang="en" dir="ltr"><!-- in bed -->
+<html lang="en" dir="ltr"><!-- with bacon -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>InBedify.com : Add &quot;in bed&quot; to any website</title>
+  <title>WithBaconfy.com : Add &quot;with bacon&quot; to any website</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Meta keywords in bed" />
-<meta name="description" content="Meta descriptions in bed" />
+<meta name="keywords" content="Meta keywords with bacon" />
+<meta name="description" content="Meta descriptions with bacon" />
 <style type="text/css">
   body{background-color:#fff;color:#333;font-family:Arial,Verdana,sans-serif;font-size:62.5%;margin:10% 5% 0 5%;text-align:center;}
   .inbedit{font-weight:bold;}
@@ -160,7 +160,7 @@ function frontPage() {
 </script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-24581773-1']);
+  _gaq.push(['_setAccount', 'UA-432773-14']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -175,27 +175,27 @@ function frontPage() {
     setTimeout('document.location = "' + link.href + '"', 100);
   }
 </script>
-</head><!-- in bed -->
+</head><!-- with bacon -->
 <body>
-<h1>In Bed<span class="ify">ify</span></h1>
+<h1>With Bacon<span class="ify">ify</span></h1>
 <div id="content">
 <form method="GET" name="inbedify" action="/">
   <span class="inbedit">You should read</span>
-  <input type="text" name="q" class="domain" id="domain_input" value="talkingpointsmemo.com" onclick="clearDomainInput(this);">
-  <span class="inbedit"><a href="#" onclick="formSubmit();">in bed</a>.</span>
+  <input type="text" name="q" class="domain" id="domain_input" value="inbedify.com" onclick="clearDomainInput(this);">
+  <span class="inbedit"><a href="#" onclick="formSubmit();">with bacon</a>.</span>
   <input type="submit" style="display: none;">
 </form>
-<p class="cta">Type in any address to InBedify!</p>
+<p class="cta">Type in any address to WithBaconfy!</p>
 </div>
 <div class="share">
-<div class="share-button tw"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://inbedify.com" data-text="&quot;in bed&quot; is not just for fortune cookies anymore: " data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
-<div class="share-button fb"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://inbedify.com" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
+<div class="share-button tw"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://withbaconfy.com" data-text="&quot;in bed&quot; is not just for fortune cookies anymore: " data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div>
+<div class="share-button fb"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://withbaconfy.com" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
 </div>
 <div class="footer">
-<p class="credits">Made by <a href="https://twitter.com/benswords" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@benswords</a> and <a href="https://twitter.com/ezrabg" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@ezrabg</a> &hellip; <em>not</em> in bed.</p>
-<p class="fineprint">This is a novelty service, no ownership over served content is implied &hellip; in bed.</p>
+<p class="credits">Made by <a href="https://twitter.com/benswords" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@benswords</a> and <a href="https://twitter.com/ezrabg" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@ezrabg</a> and tweaked a bit by <a href="https://twitter.com/rupl" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@rupl</a> &hellip; <em>not</em> in bed.</p>
+<p class="fineprint">This is a novelty service, no ownership over served content is implied &hellip; in bed or with bacon.</p>
 </div> 
-</body><!-- in bed -->
+</body><!-- with bacon -->
 </html>
 eof;
   exit;
