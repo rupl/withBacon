@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 /**
- * InBedify
+ * WithBaconfy
  *
  * Copyright (C) 2011 Ezra Barnett Gildesgame & Benjamin Jeavons
  */
@@ -177,7 +177,7 @@ function frontPage() {
 </script>
 </head><!-- with bacon -->
 <body>
-<h1>With Bacon<span class="ify">ify</span></h1>
+<h1>With Bacon<span class="ify">fy</span></h1>
 <div id="content">
 <form method="GET" name="inbedify" action="/">
   <span class="inbedit">You should read</span>
@@ -192,7 +192,7 @@ function frontPage() {
 <div class="share-button fb"><div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://withbaconfy.com" send="true" layout="button_count" width="100" show_faces="false" font=""></fb:like></div>
 </div>
 <div class="footer">
-<p class="credits">Made by <a href="https://twitter.com/benswords" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@benswords</a> and <a href="https://twitter.com/ezrabg" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@ezrabg</a> and tweaked a bit by <a href="https://twitter.com/rupl" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@rupl</a> &hellip; <em>not</em> in bed.</p>
+<p class="credits">Made by <a href="https://twitter.com/benswords" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@benswords</a> and <a href="https://twitter.com/ezrabg" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@ezrabg</a>. Made tastier by <a href="https://twitter.com/rupl" onClick="recordOutboundLink(this, 'Outbound Links', 'twitter.com');return false;">@rupl</a> with bacon.</p>
 <p class="fineprint">This is a novelty service, no ownership over served content is implied &hellip; in bed or with bacon.</p>
 </div> 
 </body><!-- with bacon -->
